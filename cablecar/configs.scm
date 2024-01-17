@@ -55,7 +55,6 @@
 (define* %base-features
   (append
    (list
-    (feature-pipewire)
     (feature-fonts)
     (feature-zsh
      #:enable-zsh-autosuggestions? #t)
