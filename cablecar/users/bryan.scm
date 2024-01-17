@@ -2,6 +2,8 @@
   #:use-module (contrib features javascript)
   #:use-module (gnu home services shepherd)
   #:use-module (gnu home services xdg)
+  #:use-module (gnu services desktop)
+  #:use-module (gnu services sddm)
   #:use-module (gnu home services)
   #:use-module (gnu home-services ssh)
   #:use-module (gnu packages)
