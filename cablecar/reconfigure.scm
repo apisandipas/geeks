@@ -34,9 +34,9 @@
           (target (getenv "RDE_TARGET"))
           (initial-os %cablecar-initial-os))
 
-  (define %user-features (dynamic-load 'users user '%user-features))
-  (define %system-features (dynamic-load 'systems system '%system-features))
-  (define %system-swap (dynamic-load 'systems system '%system-swap #:throw? #f))
+  (define %user-features (dynamic-load 'users "bryan" '%user-features))
+  (define %system-features (dynamic-load 'systems "atlas" '%system-features))
+  (define %system-swap (dynamic-load 'systems "atlas" '%system-swap #:throw? #f))
 
   (define %initial-os
     (if (or (unspecified? %system-swap) (null? %system-swap))
