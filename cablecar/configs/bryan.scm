@@ -1,4 +1,4 @@
-(define-module (rde-configs configs bryan)
+(define-module (cablecar configs bryan)
   #:use-module (contrib features javascript)
   #:use-module (gnu home services shepherd)
   #:use-module (gnu home services xdg)
