@@ -326,8 +326,8 @@ argument, throw an exception otherwise."
    ;; (feature-emacs-git)
    (feature-emacs-input-methods)
    (feature-emacs-which-key)
-   (feature-emacs-keycast
-    #:turn-on? #f)
+   ;; (feature-emacs-keycast
+   ;;  #:turn-on? #f)
    (feature-emacs-dired)
    (feature-emacs-eshell)
    ;; (feature-emacs-org
