@@ -55,16 +55,17 @@
 (define-public %base-features
   (append
     (feature-xdg
-     #:xdg-user-directories-configuration
-     (home-xdg-user-directories-configuration
-      (music "$HOME/music")
-      (videos "$HOME/vids")
-      (pictures "$HOME/pics")
-      (documents "$HOME/docs")
-      (download "$HOME/dl")
-      (desktop "$HOME")
-      (publicshare "$HOME")
-      (templates "$HOME")))
+     ;; #:xdg-user-directories-configuration
+     ;; (home-xdg-user-directories-configuration
+     ;;  (music "$HOME/music")
+     ;;  (videos "$HOME/vids")
+     ;;  (pictures "$HOME/pics")
+     ;;  (documents "$HOME/docs")
+     ;;  (download "$HOME/dl")
+     ;;  (desktop "$HOME")
+     ;;  (publicshare "$HOME")
+     ;;  (templates "$HOME"))
+     )
     (feature-base-packages
      #:system-packages
      (list cablecar-emacs-exwm)
