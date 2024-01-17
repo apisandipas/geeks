@@ -54,13 +54,6 @@
 
 (define* %base-features
   (append
-   (list
-    (feature-zsh
-     #:enable-zsh-autosuggestions? #t)
-    (feature-bash)
-    (feature-direnv)
-    (feature-git)
-    (feature-ssh)
     (feature-xdg
      #:xdg-user-directories-configuration
      (home-xdg-user-directories-configuration
@@ -106,7 +99,7 @@
        (".config/rofi/config.rasi" ,(local-file "files/config/rofi/config.rasi"))
        )
      )
-    )
+
 
    %cablecar-base-emacs-packages
    ))
