@@ -319,7 +319,7 @@ argument, throw an exception otherwise."
    ;;  )
    (feature-doom-modeline) ;; Weird zoom level issues cause gaps to behave strangely
    ;; (feature-emacs-completion)
-   (feature-vterm)
+   ;; (feature-vterm)
    ;; (feature-emacs-vertico)
    (feature-emacs-project)
    (feature-emacs-perspective)
