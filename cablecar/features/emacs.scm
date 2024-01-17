@@ -313,10 +313,10 @@ argument, throw an exception otherwise."
 (define %cablecar-base-emacs-packages
   (list
    (feature-emacs-evil)
-   (feature-emacs-appearance
-    #:header-line-as-mode-line? #f
-    ;; #:dark? #t
-    )
+   ;; (feature-emacs-appearance
+   ;;  #:header-line-as-mode-line? #f
+   ;;  ;; #:dark? #t
+   ;;  )
    (feature-doom-modeline) ;; Weird zoom level issues cause gaps to behave strangely
    (feature-emacs-completion)
    (feature-vterm)
