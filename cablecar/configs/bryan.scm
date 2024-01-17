@@ -290,5 +290,5 @@
     (feature-keyboard
      #:keyboard-layout
      (keyboard-layout
-      "us,en"
+      "us"
       #:options '("ctrl:nocaps"))))))
