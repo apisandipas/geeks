@@ -320,23 +320,23 @@ argument, throw an exception otherwise."
    (feature-doom-modeline) ;; Weird zoom level issues cause gaps to behave strangely
    ;; (feature-emacs-completion)
    (feature-vterm)
-   (feature-emacs-vertico)
+   ;; (feature-emacs-vertico)
    (feature-emacs-project)
    (feature-emacs-perspective)
    (feature-emacs-git)
    (feature-emacs-input-methods)
-   (feature-emacs-which-key)
+   ;; (feature-emacs-which-key)
    (feature-emacs-keycast
     #:turn-on? #f)
-   (feature-emacs-dired)
-   (feature-emacs-eshell)
+   ;; (feature-emacs-dired)
+   ;; (feature-emacs-eshell)
    (feature-emacs-org
     #:org-directory "~/docs/notes")
    (feature-emacs-org-agenda
     #:org-agenda-files '("~/docs/agenda/todo.org"))
    ;; (feature-emacs-smartparens
    ;;  #:show-smartparens? #t)
-   (feature-emacs-monocle)
+   ;; (feature-emacs-monocle)
    (feature-emacs
     #:extra-early-init-el
     '(
