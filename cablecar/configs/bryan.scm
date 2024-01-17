@@ -1,4 +1,4 @@
-(define-module (rde-configs users abcdw)
+(define-module (rde-configs configs bryan)
   #:use-module (contrib features javascript)
   #:use-module (gnu home services shepherd)
   #:use-module (gnu home services xdg)
@@ -40,7 +40,8 @@
   #:use-module (rde home services video)
   #:use-module (rde packages aspell)
   #:use-module (rde packages)
-  #:use-module (srfi srfi-1))
+  #:use-module (srfi srfi-1)
+  #:export (%user-features))
 
 ;;; Helpers
 

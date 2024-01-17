@@ -36,7 +36,7 @@
 
   (define %system-features (dynamic-load 'systems "atlas" '%system-features))
   (define %system-swap (dynamic-load 'systems "atlas" '%system-swap #:throw? #f))
-  (define %user-features (dynamic-load 'users "bryan" '%user-features))
+  (define %user-features (dynamic-load 'configs "bryan" '%user-features))
 
   (define %initial-os
     (if (or (unspecified? %system-swap) (null? %system-swap))
