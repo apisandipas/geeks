@@ -52,20 +52,24 @@
   #:export (%base-features))
 
 
-(define-public %base-features
+(define %base-features
   (append
-    ;; (feature-xdg
-    ;;  ;; #:xdg-user-directories-configuration
-    ;;  ;; (home-xdg-user-directories-configuration
-    ;;  ;;  (music "$HOME/music")
-    ;;  ;;  (videos "$HOME/vids")
-    ;;  ;;  (pictures "$HOME/pics")
-    ;;  ;;  (documents "$HOME/docs")
-    ;;  ;;  (download "$HOME/dl")
-    ;;  ;;  (desktop "$HOME")
-    ;;  ;;  (publicshare "$HOME")
-    ;;  ;;  (templates "$HOME"))
-    ;;  )
+   (list
+    (feature-bash)
+    (feature-direnv)
+    (feature-git)
+    (feature-ssh)
+    (feature-xdg
+     #:xdg-user-directories-configuration
+     (home-xdg-user-directories-configuration
+      (music "$HOME/music")
+      (videos "$HOME/vids")
+      (pictures "$HOME/pics")
+      (documents "$HOME/docs")
+      (download "$HOME/dl")
+      (desktop "$HOME")
+      (publicshare "$HOME")
+      (templates "$HOME")))
     (feature-base-packages
      #:system-packages
      (list cablecar-emacs-exwm)
@@ -100,7 +104,7 @@
        (".config/rofi/config.rasi" ,(local-file "files/config/rofi/config.rasi"))
        )
      )
-
+    )
 
    %cablecar-base-emacs-packages
    ))

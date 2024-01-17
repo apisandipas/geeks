@@ -183,9 +183,9 @@
 
 (define general-features
   (append
-   rde-base
+    rde-base
    rde-desktop
-   rde-mail
+   ;; rde-mail
    rde-cli
    rde-emacs))
 
@@ -206,6 +206,7 @@
              (member
               (feature-name f)
               '(base-services
+                base-packages
                 swaylock
                 git)))
            %all-features)
