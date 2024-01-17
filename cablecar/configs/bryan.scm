@@ -207,6 +207,8 @@
              (member
               (feature-name f)
               '(base-services
+                mpv
+                sway-run-on-tty
                 base-packages
                 swaylock
                 git)))
