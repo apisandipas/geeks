@@ -52,7 +52,7 @@
   #:export (%base-features))
 
 
-(define* %base-features
+(define-public %base-features
   (append
     (feature-xdg
      #:xdg-user-directories-configuration
