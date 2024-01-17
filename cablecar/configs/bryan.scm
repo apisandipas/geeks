@@ -183,11 +183,12 @@
 
 (define general-features
   (append
-    rde-base
+   rde-base
    rde-desktop
    ;; rde-mail
    rde-cli
-   rde-emacs))
+   ;; rde-emacs
+   ))
 
 (define %all-features
   (append
