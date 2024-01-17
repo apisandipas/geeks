@@ -55,7 +55,6 @@
 (define* %base-features
   (append
    (list
-    (feature-desktop-services)
     (feature-pipewire)
     (feature-fonts)
     (feature-zsh
