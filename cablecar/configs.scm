@@ -55,10 +55,10 @@
 (define %base-features
   (append
    (list
-    (feature-bash)
-    (feature-direnv)
-    (feature-git)
-    (feature-ssh)
+    ;; (feature-bash)
+    ;; (feature-direnv)
+    ;; (feature-git)
+    ;; (feature-ssh)
     (feature-xdg
      #:xdg-user-directories-configuration
      (home-xdg-user-directories-configuration
